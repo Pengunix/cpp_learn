@@ -16,7 +16,7 @@ int main()
     int m = 0;
     // &表示i为引用变量
     for (int& i : arr) {
-        if (i>m) {
+        if (i > m) {
             m = i;
         }
     }

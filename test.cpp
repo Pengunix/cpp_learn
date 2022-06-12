@@ -11,10 +11,11 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-    int* p = a;
-    for (int i=0;i<10;i++) {
-        cout << *(p+i) << endl;
-    }
+    int a = 10;
+    cout << &a << endl;
+    int &b = a;
+    cout << &b << endl;
+    int * const c = &a;
+    cout << c << endl;
     return 0;
 }

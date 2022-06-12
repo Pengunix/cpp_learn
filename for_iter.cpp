@@ -23,4 +23,23 @@ int main() {
 	    x *= 2;
 	    cout << x << endl;
 	}
+
+	int arr[5] = { 1,2,3,4,5 };
+	cout << "用值遍历" << endl;
+	for (int i : arr)
+	{
+		cout << "arr地址：" << &arr << endl;
+		cout << "第一次i的地址:" << &i << endl;
+		break;
+	}
+	cout << "-----------------------------" << endl;
+	cout << "用引用遍历" << endl;
+	for (int& i:arr)
+	{
+		cout << "arr地址：" << &arr << endl;
+		cout << "第一次i的地址:" << &i << endl;
+		break;
+	}
+	cout << "Over" << endl;
+    return 0;
 }
