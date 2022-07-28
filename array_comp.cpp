@@ -14,6 +14,7 @@ int main()
 {
     int arr[] = { 1, 2, 3, 4, 5, 6, 3, 5, 10 };
     int m = 0;
+    // range based 
     // &表示i为引用变量
     for (int& i : arr) {
         if (i > m) {

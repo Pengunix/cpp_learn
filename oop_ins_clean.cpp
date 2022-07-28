@@ -12,6 +12,7 @@
 
 #include <iostream>
 using namespace std;
+
 // 构造函数与析构函数
 class test {
 public:
