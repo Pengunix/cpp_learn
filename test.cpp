@@ -10,12 +10,23 @@
 
 #include <iostream>
 using namespace std;
+int test() {
+    return 10;
+}
+int& test1() {
+    static int a = 10;
+    return a;
+}
+int * test2() {
+    static int a[] = {1, 2, 3, 4, 5};
+    return a;
+}
+
 int main() {
-    int a = 10;
-    cout << &a << endl;
-    int &b = a;
-    cout << &b << endl;
-    int * const c = &a;
-    cout << c << endl;
+    cout << test() << endl;
+    int *p = test2();
+    for (int i=0;i<5;i++) {
+        cout << *p++ << endl;
+    }
     return 0;
 }
