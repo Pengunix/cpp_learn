@@ -30,12 +30,12 @@ class Person {
 
 };
 // 全局函数重载
-Person operator+(const Person &p1, const Person &p2) {
+Person operator+ (const Person &p1, const Person &p2) {
     Person temp(p1.m_A+p2.m_A, p1.m_B + p2.m_B);
     return temp;
 }
-// 函数重载
-Person operator+(const Person &p1, int num) {
+// 函数重载 person 类加数字
+Person operator+ (const Person &p1, int num) {
     Person temp(p1.m_A+num, p1.m_B + num);
     return temp;
 }
