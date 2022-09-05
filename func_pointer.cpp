@@ -5,21 +5,30 @@
 # QQ : 3055255696
 # Email:hoshimaemi@outlook.com
 # Blog：Null
-# Created Time: Thu 26 May 2022 05:45:09 PM CST
+# Created Time: Mon 05 Sep 2022 06:22:14 PM CST
  **/
 
 #include <iostream>
 using namespace std;
-void swap(int* p1, int* p2)
-{
-    int temp = *p1;
-    *p1 = *p2;
-    *p2 = temp;
+
+int test(int a) {
+    return a;
 }
-int main()
-{
-    int a = 10;
-    int b = 20;
-    swap(&a, &b);
-    cout << a << "  " << b << endl;
+
+int test1(int (*func)(int), int b) {
+    int c = func(10) + b;
+    return c;
+}
+
+int main() {
+    // 返回值类型 (*指针名字)(形参) = 函数;
+    int (*p)(int a) = test;
+    cout << p(2) << endl;
+    // typedef 返回值类型 (*定义类型名) (形参)
+    typedef int (*fp)(int a);
+    fp f = test;
+    cout << f(2) << endl;
+
+    cout << test1(f, 1) << endl;
+    return 0;
 }
