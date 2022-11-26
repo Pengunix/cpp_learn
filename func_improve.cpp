@@ -14,7 +14,7 @@ using namespace std;
 
 int func1(int a=10, int b=10); // 声明带有默认参数
 
-// 此处不能有默认参数 编译器出现歧义 “二异性”
+// 此处不能有默认参数 编译器出现歧义
 int func1(int a, int b) {
     return a + b;
 }

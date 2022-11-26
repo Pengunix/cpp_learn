@@ -12,6 +12,16 @@
 using namespace std;
 typedef int feet;
 
+typedef struct {
+    int a;
+    int b;
+} s1;
+
+
+void func(s1 *p1) {
+    cout << p1->a << endl;
+}
+
 int main() {
 	feet a = 1;
 	// red=0 green=5 blue=6 

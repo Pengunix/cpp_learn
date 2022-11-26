@@ -31,6 +31,9 @@ int main()
     // 连接后，str1 的总长度
     len = strlen(str1);
     cout << "strlen(str1) : " << len << endl;
+    
+    auto a = strcmp(str1, str2);
+    cout << a << endl;
 
     return 0;
 }
