@@ -34,7 +34,7 @@ class Person {
 
         }
         int m_A;
-        mutable int m_B; // 特使变量 在常函数中也可修改 加mutable
+        mutable int m_B; // 可变变量 在常函数中也可修改 加mutable
 };
 void test() {
     Person p;
@@ -43,7 +43,7 @@ void test() {
 void test1() {
     const Person p; // 常对象
     // p.m_A = 100; 不可修改
-    p.m_B = 10; // 在常对象中可修改
+    p.m_B = 10; // mutable在常对象中可修改
     // 常对象只能调用常函数
     p.showPerson();
     // p.func(); 函数没有被标记为const 不可调用 常对象不可调用普通成员函数

@@ -25,7 +25,7 @@ class Person {
         cout << "拷贝函数" << endl;
         // 修改之前编译器提供的代码
         m_age = p.m_age;
-        //m_height = p.m_height;
+        // m_height = p.m_height;
         m_height = new int(*p.m_height);
     }
     ~Person() {
