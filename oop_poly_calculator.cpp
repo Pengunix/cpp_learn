@@ -39,7 +39,7 @@ void test1() {
 // 先实现一个计算机基类(抽象类)
 class AbstractCalculator {
    public:
-    virtual int Action() { return 0; }
+    virtual int Action() = 0;
     int Num1;
     int Num2;
 };
