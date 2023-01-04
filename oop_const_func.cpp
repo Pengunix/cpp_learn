@@ -27,6 +27,7 @@ class Person {
             //this->m_A = 100;
             // 不可改变指向
             // this = NULL;
+            // m_B mutable
             this -> m_B = 10;
         }
         void func() {

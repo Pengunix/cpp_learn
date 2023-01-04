@@ -25,4 +25,5 @@ void test() {
     MyPrint() ("aaa"); // 此处使用匿名对象来使用重载
 }
 int main() {
+    test();
 }

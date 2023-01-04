@@ -26,7 +26,7 @@ class Person {
         }
 
 };
-// 利用全局函数重载 void无法链式输出endl
+// 利用全局函数重载  返回值为void无法链式输出endl
 ostream & operator<<(ostream &out, Person &p) { // 本质opertor<< (cout, p)   cout << p
     cout << p.m_A << " " << p.m_B << endl;
     // 返回值为引用 链式调用参属和返回要相同
