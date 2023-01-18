@@ -16,7 +16,7 @@ template <typename T> void mySort(T arr[], int len) {
       if (arr[max] < arr[j]) {
         max = j;
       }
-    }
+  }
     if (max != i) {
       mySwap(arr[max], arr[i]);
     }
