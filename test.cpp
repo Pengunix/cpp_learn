@@ -10,7 +10,16 @@ void test(int  a, int b) {
   cout << "aa" << endl;
 }
 
+struct A {
+  int a;
+  int b;
+};
 
 int main() {
-  test<>(1, 2);
+  A c;
+  c = {10, 10};
+  A * p = &c;
+  p->
+  
+
 }
