@@ -16,8 +16,7 @@ void print(set<int> &s) {
   cout << endl;
 }
 
-template <class T1, class T2>
-void print(set<T1, T2> &s) {
+template <class T1, class T2> void print(set<T1, T2> &s) {
   for (const int &i : s) {
     cout << i << " ";
   }
