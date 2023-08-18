@@ -16,11 +16,17 @@ public:
 class IntSLList {
 public:
   IntSLList() { head = tail = 0; }
-  // ~IntSLList();
-  int isEmpty() { return head == 0; }
+  ~IntSLList(){
+    for (IntSLLNode *p;!isEmpty();) {
+      p = head->next;
+      delete head;
+      head = p;
+    }
+  }
+  bool isEmpty() { return head == 0; }
   void addToHead(int el) {
     head = new IntSLLNode(el, head);
-    if (head == 0) {
+    if (tail == 0) {
       tail = head;
     }
   }
@@ -50,8 +56,7 @@ public:
       head = tail = 0;
     } else {
       IntSLLNode *tmp;
-      for (tmp = head; tmp->next != tail; tmp = tmp->next)
-        ;
+      for (tmp = head; tmp->next != tail; tmp = tmp->next);
       delete tail;
       tail = tmp;
       tail->next = 0;
@@ -91,9 +96,15 @@ public:
   }
   void printList() {
     IntSLLNode *tmp = head;
-    for (int i = head->info; tmp != tail; tmp = tmp->next) {
-      cout << i << endl;
+    while (tmp != 0) {
+      cout << tmp->info << " ";
+      tmp = tmp -> next;
     }
+    cout << endl;
+  }
+  void printpointer() {
+    cout << head << endl;
+    cout << tail << endl;
   }
 
 private:
@@ -104,5 +115,7 @@ int main() {
   IntSLList a;
   a.addToHead(11);
   a.addToHead(3);
+  a.addToTail(12);
+  a.deleteNode(3);
   a.printList();
 }
