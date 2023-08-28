@@ -87,6 +87,17 @@ public:
       }
     }
   }
+  void reverse() {
+    IntSLLNode * tmp,*pred=head,*cur=head->next;
+    head->next = 0;
+
+    while (cur!=0) {
+      tmp = cur;
+      cur->next = pred; 
+      cur = tmp->next;
+      pred = tmp;
+    }
+  }
 
   bool isInList(int el) const {
     IntSLLNode *tmp;
@@ -116,6 +127,12 @@ int main() {
   a.addToHead(11);
   a.addToHead(3);
   a.addToTail(12);
-  a.deleteNode(3);
+  a.addToTail(6);
+  a.addToTail(8);
+  a.addToTail(99);
+  a.addToTail(56);
+
+  a.printList();
+  a.reverse();
   a.printList();
 }

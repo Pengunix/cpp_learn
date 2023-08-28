@@ -26,7 +26,7 @@ class Base {
         //virtual ~Base() {
         //    cout << "Base destructor" << endl;
         //}
-        //virtual void func() = 0;
+        virtual void func() = 0;
         // 使用纯虚析构 也需要类外实现
         virtual ~Base() = 0;
 }; 

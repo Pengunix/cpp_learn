@@ -74,6 +74,10 @@ void test() {
     Person p2 = Person(10);
     // 调用拷贝构造
     Person p3 = Person(p2);
+    // 列表初始化 brace init, list init
+    // 不允许缩窄和截断，防止丢失精度，更推荐使用
+    // 但auto 更推荐等号
+    Person pa {10};
     
     Person(10); // 匿名对象 创建了一个对象但没有名字 特点:
                 // 当前行执行结束后，系统会立即回收掉匿名对象

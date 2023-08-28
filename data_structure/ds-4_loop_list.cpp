@@ -36,10 +36,11 @@ class SLLoop {
     }
     void printlist() {
       SLLNode<T> *tmp = tail;
-      //do {
-        cout << tmp->info << endl;
-        //tmp = tmp->next;
-      //} while(tmp!=tail);
+      do {
+        cout << tmp->info << " ";
+        tmp = tmp->next;
+      } while(tmp!=tail);
+      cout << endl;
     }
   protected:
     SLLNode<T> *tail;
@@ -47,7 +48,7 @@ class SLLoop {
 
 int main() {
   SLLoop<int> a(1);
-  a.printlist();
+  // a.printlist();
   a.addBehTail(2);
   a.addBehTail(3);
   a.addBehTail(4);
