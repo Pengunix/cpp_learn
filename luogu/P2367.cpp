@@ -1,6 +1,4 @@
-// 差分 语文成绩
-
-
+// 差分 语文成绩 AC
 #include <iostream>
 using namespace std;
 using ll = long long;

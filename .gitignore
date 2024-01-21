@@ -2,4 +2,5 @@ build/
 .vscode
 file/
 test.cpp
+test*.cpp
 tmp/

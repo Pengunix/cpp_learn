@@ -1,4 +1,4 @@
-// 求区间和
+// 求区间和 AC
 #include <algorithm>
 #include <iostream>
 using namespace std;

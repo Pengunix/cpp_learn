@@ -1,4 +1,4 @@
-// 给定n个整数，求它们两两相乘再相加的和
+// AC 给定n个整数，求它们两两相乘再相加的和
 #include <iostream>
 using namespace std;
 using ll = long long;

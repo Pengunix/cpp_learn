@@ -1,5 +1,4 @@
-// 二分
-
+// 没写完
 #include <algorithm>
 #include <iostream>
 using namespace std;

@@ -1,12 +1,13 @@
 #include <iostream>
-#include <list>
+#include <bitset>
 using namespace std;
 using ll = long long;
 const int N = 2e5 + 10;
 
+bitset<32>s1;
+bitset<32> one;
+bitset<32> ret;
+
 int main() {
-  list<int> l{1, 2, 3};
-  list<int>::iterator it = l.end();
-  cout << *(it++);
-  cout << *(it++);
+
 }

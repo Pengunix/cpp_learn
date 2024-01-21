@@ -1,4 +1,4 @@
-// 右边第一个比他大的元素下标
+// 右边第一个比他大的元素下标 AC
 #include <iostream>
 #include <stack>
 using namespace std;
