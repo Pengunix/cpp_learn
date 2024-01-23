@@ -4,7 +4,7 @@ using namespace std;
 typedef long long ll;
 
 struct Int {
-  int len, a[2000];
+  int len, a[100];
   Int(int x = 0) {
     memset(a, 0, sizeof(a));
     for (len = 1; x; len++)

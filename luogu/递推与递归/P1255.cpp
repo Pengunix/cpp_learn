@@ -1,6 +1,6 @@
 // AC
 #include <iostream>
-#include "../utils/普通高精度.cpp"
+#include "../../utils/普通高精度.cpp"
 using namespace std;
 using ll = long long;
 // 这题注意高精度位数，如果出现前导零说明位数不够。
