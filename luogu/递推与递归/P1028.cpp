@@ -5,7 +5,7 @@ using namespace std;
 using ll = long long;
 
 int n;
-array<int, 101> f;
+array<int, 1010> f;
 
 int sol(int x) {
   int ans = 1;
