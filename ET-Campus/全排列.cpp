@@ -8,6 +8,7 @@ int a[N], n;
 bitset<N> vis;
 // 也能用next_permutation做
 void dfs(int dep) { // dep当前深度
+  // 出口
   if (dep == n + 1) {
     for (int i=1;i<=n;++i) {
       cout << a[i] << " \n"[i==n];

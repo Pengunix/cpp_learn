@@ -15,13 +15,13 @@ int f(int x) {
 }
 
 int main() {
+  // 输入量较大，不加会超时
+  ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
   int n;
   cin >> n;
   for (int i = 1; i <= n; ++i) {
     int x;
-
     cin >> x;
-
-    cout << f(x) << '\n';
+    cout << f(x) << ' ';
   }
 }
