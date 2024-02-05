@@ -1,5 +1,5 @@
-#include <array>
 #include <bitset>
+#include <cstring>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -11,11 +11,10 @@ struct Edge {
 };
 
 vector<Edge> g[N];
-array<ll, N> a;
-ll n, m;
+ll n, m, a[N];
 
 void dijkstra(int st) {
-  a.fill(0x3f);
+  memset(a, 0x3f, sizeof a);
   a[st] = 0;
   bitset<N> vis; // 表示已经拓展过
   for (int i = 1; i <= n; ++i) {

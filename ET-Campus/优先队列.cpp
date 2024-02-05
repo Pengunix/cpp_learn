@@ -28,6 +28,6 @@ int main() {
       sum -= pq.top();
       pq.pop();
     }
-    cout << sum << '\n';
   }
+  cout << sum << '\n';
 }

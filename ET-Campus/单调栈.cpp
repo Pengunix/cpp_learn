@@ -3,7 +3,7 @@
 #include <stack>
 using namespace std;
 using ll = long long;
-const int N = 1e5 + 10;
+const int N = 2e5 + 10;
 int a[N], l[N];
 
 int main() {
