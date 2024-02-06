@@ -11,7 +11,8 @@ struct Edge {
   ll x, w;
   bool operator<(const Edge &v) const {
     // w小的优先
-    return w > v.w;
+    // return w > v.w;
+    return w == v.w ? x < v.x : w > v.w;
   }
 };
 
@@ -54,9 +55,9 @@ int main() {
   }
   dijkstra(1);
   // 判断是否能到达
-  // cout << (d[n] >= 0x3f3f3f3f3f3f3f3f ? -1 : d[n]) << '\n';
-  for (int i=1;i<=n;++i) {
-    cout << (d[i] >= 2e18 ? -1 : d[i]) << ' ';
-  }
+  cout << (d[n] >= 0x3f3f3f3f3f3f3f3f ? -1 : d[n]) << '\n';
+  // for (int i=1;i<=n;++i) {
+    // cout << (d[i] >= 2e18 ? -1 : d[i]) << ' ';
+  // }
   
 }
