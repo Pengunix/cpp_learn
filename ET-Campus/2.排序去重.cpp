@@ -24,7 +24,7 @@ int main() {
   // 必须在unique之前 sort O(nlogn) 或是其他
   sort(a.begin(), a.end());
   // unique会把重复的数据丢在末尾，并返回第一个重复数据的迭代器
-  a.erase(unique(a.begin(), a.end(), a.end()));
+  a.erase(unique(a.begin(), a.end()), a.end());
 
   for (int &i : a)
     cout << i << '\n';

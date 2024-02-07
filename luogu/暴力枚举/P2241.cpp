@@ -12,7 +12,7 @@ void test1() {
       rec += n*m - tmp;
     }
   }
-  cout << squ/4 << ' '
+  cout << squ/4 << ' ';
 }
 
 void test2() {
