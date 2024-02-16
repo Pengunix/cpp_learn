@@ -12,6 +12,7 @@ struct Edge {
   bool operator<(const Edge &v) const {
     // w小的优先
     // return w > v.w;
+    // 完备比较，也可用于set进行去重操作
     return w == v.w ? x < v.x : w > v.w;
   }
 };
